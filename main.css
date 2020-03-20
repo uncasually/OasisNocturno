@@ -559,7 +559,9 @@ i {
   background: rgba(0, 0, 0, 0.75);
 }
 
+#music > div { width: auto; }
 #bio > div { top: 65%; } 
+
 .modal-window header {
   font-weight: bold;
 }
