@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+    
+  
+            _   _   _   _   _     _   _   _   _   _   _   _   _  
+           / \ / \ / \ / \ / \   / \ / \ / \ / \ / \ / \ / \ / \ 
+          ( O | A | S | I | S ) ( N | O | C | T | U | R | N | O )
+           \_/ \_/ \_/ \_/ \_/   \_/ \_/ \_/ \_/ \_/ \_/ \_/ \_/ 
+
+
+                         site by: uncasually.com 
+                                  @uncasually 
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<title>OASIS NOCTURNO | Tokimonsta</title>
+
+<meta name="author"               content="Tokimonsta x uncasually">
+<meta name="description"          content="OASIS NOCTURNO | Tokimonsta">
+
+<meta name="twitter:card"         content="summary_large_image">
+<meta name="twitter:site"         content="@Tokimonsta">
+<meta name="twitter:url"          content="http://tokimonsta.com/"/>
+<meta name="twitter:description"  content="OASIS NOCTURNO Out Now | Tokimonsta"/>
+
+<meta property="og:title"         content="Tokimonsta presents: OASIS NOCTURNO"/>
+<meta property="og:description"   content="OASIS NOCTURNO Out Now | Tokimonsta">
+<meta property="og:url"           content="http://tokimonsta.com/">
+<meta property="og:site_name"     content="Tokimonsta presents: OASIS NOCTURNO">
+<meta property="og:type"          content="website">
+<meta property="og:image"         content="http://tokimonsta.com/assets/uploads/files/single.jpg">
+<meta property="og:image:type"    content="image/jpeg" />
+<meta property="og:image:width"   content="1200" />
+<meta property="og:image:height"  content="1200" />
+<!-- Favicons-->
+<link rel="shortcut icon" href="favicon.ico">
+<!-- Libraries -->   
+<script src='./build/three.min.js'></script>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  
+<!-- Styles -->
+<link type="text/css" rel="stylesheet" href="main.css">
+</head>       
+ <body class="">
+  <div class="loading">
+  <svg 
+  version="1.1" 
+  id="spinner" 
+  xmlns="http://www.w3.org/2000/svg" 
+  x="0px" y="0px"
+  width:"38"
+  height:"38"
+  viewBox="0 0 38 38" 
+  preserveAspectRatio="xMinYMin meet"
+  >
+  <text x="14" y="21" font-family="Lato" font-size="2px" style="letter-spacing:0.6" fill="grey">LOADING
+     <animate 
+       attributeName="opacity"
+       values="0;1;0" dur="1.8s"
+       repeatCount="indefinite"/>
+  </text>
+  <path fill="#373a42" d="M20,35c-8.271,0-15-6.729-15-15S11.729,5,20,5s15,6.729,15,15S28.271,35,20,35z M20,5.203
+    C11.841,5.203,5.203,11.841,5.203,20c0,8.159,6.638,14.797,14.797,14.797S34.797,28.159,34.797,20
+    C34.797,11.841,28.159,5.203,20,5.203z">
+  </path>
+
+  <path fill="#373a42" d="M20,33.125c-7.237,0-13.125-5.888-13.125-13.125S12.763,6.875,20,6.875S33.125,12.763,33.125,20
+    S27.237,33.125,20,33.125z M20,7.078C12.875,7.078,7.078,12.875,7.078,20c0,7.125,5.797,12.922,12.922,12.922
+    S32.922,27.125,32.922,20C32.922,12.875,27.125,7.078,20,7.078z">
+  </path>
+
+  <path fill="#d92aff" stroke="#d92aff" stroke-width="0.6027" stroke-miterlimit="10" d="M5.203,20
+   c0-8.159,6.638-14.797,14.797-14.797V5C11.729,5,5,11.729,5,20s6.729,15,15,15v-0.203C11.841,34.797,5.203,28.159,5.203,20z">
+  <animateTransform
+        attributeName="transform"
+        type="rotate"
+        from="0 20 20"
+        to="360 20 20"
+        calcMode="spline"
+        keySplines="0.4, 0, 0.2, 1"
+        keyTimes="0;1"
+        dur="2s"
+        repeatCount="indefinite" />      
+   </path>
+
+  <path fill="#b294c5" stroke="#b294c5" stroke-width="0.2027" stroke-miterlimit="10" d="M7.078,20
+  c0-7.125,5.797-12.922,12.922-12.922V6.875C12.763,6.875,6.875,12.763,6.875,20S12.763,33.125,20,33.125v-0.203
+  C12.875,32.922,7.078,27.125,7.078,20z">
+   <animateTransform
+      attributeName="transform"
+      type="rotate"
+      from="0 20 20"
+      to="360 20 20"
+      dur="1.8s"  
+      repeatCount="indefinite" />
+    </path>
+  </svg>
+</div>
+  <div class="logo"><img src="images/TOKi-FINAL.png"></div>
+  <div id="info" class="single-title">
+   <img src="images/Oasis.png" data-tilt data-tilt-glare data-tilt-max-glare="0.8" data-tilt-axis="x" style="z-index: 10000;">
+   <img src="images/Nocturno.png" data-tilt data-tilt-glare data-tilt-max-glare="0.8" data-tilt-axis="x"  style="z-index: 10000;">
+  </div>
+  <div id="container"></div>
+
+  <script type="module">
+
+   import * as THREE from './build/three.module.js';
+   import { OrbitControls } from './jsm/controls/OrbitControls.js';
+   import { DDSLoader } from './jsm/loaders/DDSLoader.js';
+   import { MTLLoader } from './jsm/loaders/MTLLoader.js';
+   import { OBJLoader } from './jsm/loaders/OBJLoader.js';
+   import { UnrealBloomPass } from './jsm/postprocessing/UnrealBloomPass.js';
+
+   var container;
+   var params = {
+    projection: 'normal',
+    autoRotate: true,
+    reflectivity: 1.0,
+    background: false,
+    exposure: 1.0,
+    gemColor: 'White'
+   };
+   var camera, scene, renderer, objects = [];
+   var gemBackMaterial, gemFrontMaterial;
+   var hdrCubeRenderTarget;
+   var pointLight;
+
+   init();
+   animate();
+
+   function init() {
+
+    container = document.createElement( 'div' );
+    document.body.appendChild( container );
+
+    camera = new THREE.PerspectiveCamera( 100, window.innerWidth / window.innerHeight, 1, 5000 );
+    camera.position.z = 600;
+
+    // ------- cubemap
+    var path = 'textures/cube/skybox/';
+    var format = '.jpg';
+    var urls = [
+     path + 'px' + format, path + 'nx' + format,
+     path + 'py' + format, path + 'ny' + format,
+     path + 'pz' + format, path + 'nz' + format
+    ];
+
+    var reflectionCube = new THREE.CubeTextureLoader().load( urls );
+    var refractionCube = new THREE.CubeTextureLoader().load( urls );
+    refractionCube.mapping = THREE.CubeRefractionMapping;
+
+    scene = new THREE.Scene();
+    scene.background = reflectionCube;
+
+    // ------- lights
+    var ambient = new THREE.AmbientLight( 0xffffff );
+    scene.add( ambient );
+
+    pointLight = new THREE.PointLight( 0xffffff, 2 );
+    scene.add( pointLight );
+    
+    var cubeMaterial2 = new THREE.MeshPhongMaterial( { color: 0xccfffd, envMap: reflectionCube, refractionRatio: 0.985 } );
+    var cubeMaterial1 = new THREE.MeshPhongMaterial( { color: 0xffffff, envMap: reflectionCube, refractionRatio: 0.98 } );
+
+    // ------- GEM
+    renderer = new THREE.WebGLRenderer( { antialias: true } );
+
+    var manager = new THREE.LoadingManager();
+    manager.onStart = function ( item, loaded, total ) {
+
+     console.log( item, loaded, total );
+     
+    }
+    manager.onProgress = function ( item, loaded, total ) {
+
+     console.log( item, loaded, total );
+     
+    }
+    // ------- PAGE LOADING
+    
+    manager.onLoad = function () {
+     
+     console.log( 'READY' );
+     document.querySelector( 
+                  ".loading").style.display = "none";
+     
+     };
+
+    var loader = new OBJLoader( manager );
+    
+    loader.load( 'models/obj/gemc.obj', function ( object ) {
+     
+     // ------- AXIS
+        var objBbox = new THREE.Box3().setFromObject(object);
+        
+         // Geometry vertices centering to world axis
+            var bboxCenter = objBbox.getCenter().clone();
+            bboxCenter.multiplyScalar(-1);
+
+            object.traverse(function (child) {
+                if (child instanceof THREE.Mesh) {
+                    child.geometry.translate(bboxCenter.x, bboxCenter.y, bboxCenter.z);
+                }
+            });
+
+            objBbox.setFromObject(object); // Update the bounding box ----- END
+
+     object.traverse( function ( child ) {
+
+      if ( child instanceof THREE.Mesh ) {
+
+       child.material = cubeMaterial2;
+       var second = child.clone();
+       second.material = cubeMaterial1;
+
+       var parent = new THREE.Group();
+       parent.add( second );
+       parent.add( child );
+       scene.add( parent );
+
+       objects.push( parent );
+ 
+      }
+
+     } );
+
+    } );
+
+
+    // ------- renderer
+    renderer = new THREE.WebGLRenderer();
+    renderer.setPixelRatio( window.devicePixelRatio );
+    renderer.setSize( window.innerWidth, window.innerHeight );
+    container.appendChild( renderer.domElement );
+
+    // ------- controls
+    var controls = new OrbitControls( camera, renderer.domElement );
+    controls.enableZoom = false;
+    controls.enablePan = false;
+    controls.minPolarAngle = Math.PI / 4;
+    controls.maxPolarAngle = Math.PI / 1.5;
+
+    window.addEventListener( 'resize', onWindowResize, false );
+
+   }
+
+   function onWindowResize() {
+
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+
+    renderer.setSize( window.innerWidth, window.innerHeight );
+
+   }
+
+   function animate() {
+
+    requestAnimationFrame( animate );
+    render();
+
+   }
+
+   function render() {
+    
+     if ( gemBackMaterial !== undefined && gemFrontMaterial !== undefined ) {
+
+     gemFrontMaterial.reflectivity = gemBackMaterial.reflectivity = params.reflectivity;
+
+     var newColor = gemBackMaterial.color;
+     switch ( params.gemColor ) {
+
+      case 'White': newColor = new THREE.Color( 0x8888ff ); break;
+      case 'Black': newColor = new THREE.Color( 0x0f0f0f ); break;
+
+     }
+     
+     gemBackMaterial.color = gemFrontMaterial.color = newColor;
+
+    }
+
+    renderer.toneMappingExposure = params.exposure;
+
+    camera.lookAt( scene.position );
+
+    if ( params.autoRotate ) {
+     
+     for ( var i = 0, l = objects.length; i < l; i ++ ) {
+
+      var object = objects[ i ];
+      object.rotation.y += 0.01;
+      object.position.x = 30;
+      object.position.y = 120;
+      object.position.z = 100;
+      object.scale.set(.75, .75, .75);
+
+     }
+
+    }
+
+   }
+   
+   // Simple form of tiled forward lighting
+   // using texels as bitmasks of 32 lights
+
+   var RADIUS = 200;
+
+   THREE.ShaderChunk[ 'lights_pars_begin' ] += [
+    '',
+    '#if defined TILED_FORWARD',
+    'uniform vec4 tileData;',
+    'uniform sampler2D tileTexture;',
+    'uniform sampler2D lightTexture;',
+    '#endif'
+   ].join( '\n' );
+
+   THREE.ShaderChunk[ 'lights_fragment_end' ] += [
+    '',
+    '#if defined TILED_FORWARD',
+    'vec2 tUv = floor(gl_FragCoord.xy / tileData.xy * 32.) / 32. + tileData.zw;',
+    'vec4 tile = texture2D(tileTexture, tUv);',
+    'for (int i=0; i < 4; i++) {',
+    ' float tileVal = tile.x * 255.;',
+    '   tile.xyzw = tile.yzwx;',
+    ' if(tileVal == 0.){ continue; }',
+    '   float tileDiv = 128.;',
+    ' for (int j=0; j < 8; j++) {',
+    '    if (tileVal < tileDiv) {  tileDiv *= 0.5; continue; }',
+    '  tileVal -= tileDiv;',
+    '  tileDiv *= 0.5;',
+    '    PointLight pointlight;',
+    '  float uvx = (float(8 * i + j) + 0.5) / 32.;',
+    '    vec4 lightData = texture2D(lightTexture, vec2(uvx, 0.));',
+    '    vec4 lightColor = texture2D(lightTexture, vec2(uvx, 1.));',
+    '    pointlight.position = lightData.xyz;',
+    '    pointlight.distance = lightData.w;',
+    '    pointlight.color = lightColor.rgb;',
+    '    pointlight.decay = lightColor.a;',
+    '    getPointDirectLightIrradiance( pointlight, geometry, directLight );',
+    '  RE_Direct( directLight, geometry, material, reflectedLight );',
+    ' }',
+    '}',
+    '#endif'
+   ].join( '\n' );
+
+   var lights = [];
+
+   var State = {
+    rows: 0,
+    cols: 0,
+    width: 0,
+    height: 0,
+    tileData: { value: null },
+    tileTexture: { value: null },
+    lightTexture: {
+     value: new THREE.DataTexture( new Float32Array( 32 * 2 * 4 ), 32, 2, THREE.RGBAFormat, THREE.FloatType )
+    },
+   };
+
+   function resizeTiles() {
+
+    var width = window.innerWidth;
+    var height = window.innerHeight;
+
+    State.width = width;
+    State.height = height;
+    State.cols = Math.ceil( width / 32 );
+    State.rows = Math.ceil( height / 32 );
+    State.tileData.value = [ width, height, 0.5 / Math.ceil( width / 32 ), 0.5 / Math.ceil( height / 32 ) ];
+    State.tileTexture.value = new THREE.DataTexture( new Uint8Array( State.cols * State.rows * 4 ), State.cols, State.rows );
+
+   }
+
+   // Generate the light bitmasks and store them in the tile texture
+   function tileLights( renderer, scene, camera ) {
+
+    if ( ! camera.projectionMatrix ) return;
+
+    var d = State.tileTexture.value.image.data;
+    var ld = State.lightTexture.value.image.data;
+
+    var viewMatrix = camera.matrixWorldInverse;
+
+    d.fill( 0 );
+
+    var vector = new THREE.Vector3();
+
+    lights.forEach( function ( light, index ) {
+
+     vector.setFromMatrixPosition( light.matrixWorld );
+
+     var bs = lightBounds( camera, vector, light._light.radius );
+
+     vector.applyMatrix4( viewMatrix );
+     vector.toArray( ld, 4 * index );
+     ld[ 4 * index + 3 ] = light._light.radius;
+     light._light.color.toArray( ld, 32 * 4 + 4 * index );
+     ld[ 32 * 4 + 4 * index + 3 ] = light._light.decay;
+
+     if ( bs[ 1 ] < 0 || bs[ 0 ] > State.width || bs[ 3 ] < 0 || bs[ 2 ] > State.height ) return;
+     if ( bs[ 0 ] < 0 ) bs[ 0 ] = 0;
+     if ( bs[ 1 ] > State.width ) bs[ 1 ] = State.width;
+     if ( bs[ 2 ] < 0 ) bs[ 2 ] = 0;
+     if ( bs[ 3 ] > State.height ) bs[ 3 ] = State.height;
+
+     var i4 = Math.floor( index / 8 ), i8 = 7 - ( index % 8 );
+
+     for ( var i = Math.floor( bs[ 2 ] / 32 ); i <= Math.ceil( bs[ 3 ] / 32 ); i ++ ) {
+
+      for ( var j = Math.floor( bs[ 0 ] / 32 ); j <= Math.ceil( bs[ 1 ] / 32 ); j ++ ) {
+
+       d[ ( State.cols * i + j ) * 4 + i4 ] |= 1 << i8;
+
+      }
+
+     }
+
+    } );
+
+    State.tileTexture.value.needsUpdate = true;
+    State.lightTexture.value.needsUpdate = true;
+
+   }
+
+   // Screen rectangle bounds from light sphere's world AABB
+   var lightBounds = function () {
+
+    var v = new THREE.Vector3();
+    return function ( camera, pos, r ) {
+
+     var minX = State.width, maxX = 0, minY = State.height, maxY = 0, hw = State.width / 2, hh = State.height / 2;
+
+     for ( var i = 0; i < 8; i ++ ) {
+
+      v.copy( pos );
+      v.x += i & 1 ? r : - r;
+      v.y += i & 2 ? r : - r;
+      v.z += i & 4 ? r : - r;
+      var vector = v.project( camera );
+      var x = ( vector.x * hw ) + hw;
+      var y = ( vector.y * hh ) + hh;
+      minX = Math.min( minX, x );
+      maxX = Math.max( maxX, x );
+      minY = Math.min( minY, y );
+      maxY = Math.max( maxY, y );
+
+     }
+
+     return [ minX, maxX, minY, maxY ];
+
+    };
+
+   }();
+
+   // Rendering
+
+   var renderer = new THREE.WebGLRenderer();
+   renderer.toneMapping = THREE.LinearToneMapping;
+   container.appendChild( renderer.domElement );
+
+   var renderTarget = new THREE.WebGLRenderTarget();
+
+   scene.add( new THREE.AmbientLight( 0xffffff, 0.33 ) );
+   // At least one regular Pointlight is needed to activate light support
+   scene.add( new THREE.PointLight( 0xff0000, 0.1, 0.1 ) );
+
+   var bloom = new UnrealBloomPass( new THREE.Vector2(), 0.8, 0.6, 0.8 );
+   bloom.renderToScreen = true;
+
+   var controls = new OrbitControls( camera, renderer.domElement );
+   controls.minDistance = 200;
+   controls.maxDistance = 600;
+
+   var materials = [];
+
+   var Hands = [
+    { type: 'physical', uniforms: { "diffuse": 0xf4f4f4, "metalness": 0.90, "roughness": 0.1 }, defines: {} }
+   ];
+
+   function geos( geom ) {
+
+    var sphereGeom = new THREE.SphereBufferGeometry( 3, 192, 128 );
+    var tIndex = Math.round( Math.random() * 3 );
+
+    Object.keys( Hands ).forEach( function ( t, index ) {
+
+     var g = new THREE.Group();
+     var conf = Hands[ t ];
+     var ml = THREE.ShaderLib[ conf.type ];
+     var mtl = new THREE.ShaderMaterial( {
+      lights: true,
+      fragmentShader: ml.fragmentShader,
+      vertexShader: ml.vertexShader,
+      uniforms: THREE.UniformsUtils.clone( ml.uniforms ),
+      defines: conf.defines,
+      transparent: tIndex === index ? true : false,
+     } );
+
+     mtl.uniforms[ "opacity" ].value = tIndex === index ? 0.9 : 1;
+     mtl.uniforms[ "tileData" ] = State.tileData;
+     mtl.uniforms[ "tileTexture" ] = State.tileTexture;
+     mtl.uniforms[ "lightTexture" ] = State.lightTexture;
+
+     for ( var u in conf.uniforms ) {
+
+      var vu = conf.uniforms[ u ];
+
+      if ( mtl.uniforms[ u ].value.set ) {
+
+       mtl.uniforms[ u ].value.set( vu );
+
+      } else {
+
+       mtl.uniforms[ u ].value = vu;
+
+      }
+
+     }
+
+     mtl.defines[ 'TILED_FORWARD' ] = 1;
+     materials.push( mtl );
+
+     var obj = new THREE.Mesh( geom, mtl );
+     obj.position.y = - 37;
+     mtl.side = tIndex === index ? THREE.FrontSide : THREE.DoubleSide;
+
+     g.rotation.y = index * Math.PI / 2;
+     g.position.x = Math.sin( index * Math.PI / 2 ) * RADIUS;
+     g.position.z = Math.cos( index * Math.PI / 2 ) * RADIUS;
+     g.add( obj );
+
+
+     for ( var i = 0; i < 8; i ++ ) {
+
+      var color = new THREE.Color().setRGB( Math.floor(Math.random() * (.95 - .15)) + .70, Math.random(), 0.85 );
+      var l = new THREE.Group();
+
+
+      l.add( new THREE.Mesh(
+       sphereGeom,
+       new THREE.MeshBasicMaterial( {
+        color: color
+       } )
+      ) );
+
+      l.add( new THREE.Mesh(
+       sphereGeom,
+       new THREE.MeshBasicMaterial( {
+        color: color,
+        transparent: true,
+        opacity: 0.033
+       } )
+      ) );
+
+      l.children[ 1 ].scale.set( 6.66, 6.66, 6.66 );
+
+      l._light = {
+       color: color,
+       radius: RADIUS,
+       decay: 1,
+       sy: Math.random(),
+       sr: Math.random(),
+       sc: Math.random(),
+       py: Math.random() * Math.PI,
+       pr: Math.random() * Math.PI,
+       pc: Math.random() * Math.PI,
+       dir: Math.random() > 0.5 ? 1 : - 1
+      };
+
+      lights.push( l );
+      g.add( l );
+
+     }
+
+     scene.add( g );
+
+    } );
+
+   }
+
+   function update( now ) {
+
+    lights.forEach( function ( l ) {
+
+     var ld = l._light;
+     var radius = 0.8 + 0.2 * Math.sin( ld.pr + ( 0.6 + 0.3 * ld.sr ) * now );
+     l.position.x = ( Math.sin( ld.pc + ( 0.8 + 0.2 * ld.sc ) * now * ld.dir ) ) * radius * RADIUS;
+     l.position.z = ( Math.cos( ld.pc + ( 0.8 + 0.2 * ld.sc ) * now * ld.dir ) ) * radius * RADIUS;
+     l.position.y = Math.sin( ld.py + ( 0.8 + 0.2 * ld.sy ) * now ) * radius * 32;
+
+    } );
+
+   }
+   
+   function resize() {
+
+    renderer.setPixelRatio( window.devicePixelRatio );
+    renderer.setSize( window.innerWidth, window.innerHeight );
+    renderTarget.setSize( window.innerWidth, window.innerHeight );
+    bloom.setSize( window.innerWidth, window.innerHeight );
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    resizeTiles();
+
+   }
+
+   function postEffect( renderer ) {
+
+    bloom.render( renderer, null, renderTarget );
+
+   }
+
+   scene.onBeforeRender = tileLights;
+
+   scene.onAfterRender = postEffect;
+   
+   var leftHand, rightHand;
+
+   var loader = new OBJLoader();
+
+   loader.load( 'models/obj/hands/lefth.obj', function ( object ) {
+
+    var geometry = object.children[ 0 ].geometry;
+
+    window.addEventListener( 'resize', resize );
+    
+    leftHand = object;
+    geos( geometry );
+    resize();
+
+    renderer.setAnimationLoop( function ( time ) {
+
+     update( time / 1000 );
+     renderer.setRenderTarget( renderTarget );
+     renderer.render( scene, camera );
+
+    } );
+
+   } );
+   
+   loader.load( 'models/obj/hands/righth.obj', function ( object ) {
+
+    var geometry = object.children[ 0 ].geometry;
+
+    window.addEventListener( 'resize', resize );
+
+    rightHand=object;
+    geos( geometry );
+    resize();
+
+    renderer.setAnimationLoop( function ( time ) {
+
+     update( time / 1000 );
+     renderer.setRenderTarget( renderTarget );
+     renderer.render( scene, camera );
+
+    } );
+
+   } );
+   
+   
+
+  </script>
+  <div class="site-contents">
+   <section id="music" class="modal-window">
+    <div>
+    <a href="#" title="Close" class="modal-close">Close</a>
+    <div class="music-content column">   
+     <img src="images/ONFinal.jpg">
+     <h3><a href="https://ingroov.es/oasisnocturno" target="_blank">Listen Now</a></h3>
+    </div> 
+   </div>
+   </section>
+ <section id="tour" class="modal-window">
+  <div>
+   <a href="#" title="Close" class="modal-close">Close</a>
+  <div class="container-fluid modal-contents nopad">
+  <h2 class="section-title">Tour Dates</h2>
+  <div id="seated-55fdf2c0" data-artist-id="b36663a8-3d72-44d6-aeb8-84dcec6e46d2" data-css-version="2"></div><script src="https://widget.seated.com/app.js"></script>
+  </div>
+  </div>
+ </section>
+ <section id="releases" class="row modal-window">
+  <div>
+   <a href="#" title="Close" class="modal-close">Close</a>
+<div class="container-fluid modal-contents nopad">
+<h2 class="section-title">Releases</h2>
+<div class="row">
+<div class="release" data-sr="enter bottom, move 50px over 0.5s after 0.30s">
+  <a href="http://smarturl.it/Dont_Call_Me">
+  <img src="https://cdn.shopify.com/s/files/1/2029/4271/t/9/assets/dcm.jpg">
+  <div class="releasename"><h4>Don't Call Me feat. Yuna</h4></div>
+  </a>
+</div>
+<div class="release" data-sr="enter bottom, move 50px, over 0.5s, wait 0.50s">
+  <a href="http://smarturl.it/TOKiMONSTA_FOVERE">
+  <img src="https://cdn.shopify.com/s/files/1/2029/4271/t/9/assets/foreve.jpg">
+  <div class="releasename"><h4>Fovere</h4></div>
+  </a>   
+</div>
+<div class="release" data-sr="enter bottom, move 50px, over 0.5s, wait 0.70s">
+  <a href="http://smarturl.it/Desiderium" class="purchase-link">  
+  <img src="https://cdn.shopify.com/s/files/1/2029/4271/t/9/assets/tokimonsta-desiderium-cover.jpg">
+  <div class="releasename"><h4>Desiderium</h4></div>
+  </a>
+</div>
+</div>
+<div class="row">
+<div class="release" data-sr="enter bottom, move 50px ,over 0.5s, wait 0.30s">
+  <a href="http://smarturl.it/Half_Shadows"> 
+  <img src="https://cdn.shopify.com/s/files/1/2029/4271/t/9/assets/half-shadows.jpg">
+  <div class="releasename"><h4>Half Shadows</h4></div>
+  </a>
+</div>
+<div class="release" data-sr="enter bottom, move 50px, over 0.5s, wait 0.50s">
+  <a href="http://smarturl.it/Creature_Dreams"> 
+  <img src="https://cdn.shopify.com/s/files/1/2029/4271/t/9/assets/creature-dreams.jpg">
+  <div class="releasename"><h4>Creature Dreams</h4></div>
+  </a>
+</div>
+<div class="release" data-sr="enter bottom, move 50px, over 0.5s, wait 0.70s">
+  <a href="http://smarturl.it/LA_Series_8">
+  <img src="https://cdn.shopify.com/s/files/1/2029/4271/t/9/assets/mikegao.jpg">
+  <div class="releasename"><h4>MIKE GAO + TOKiMONSTA | Los Angeles 8/10 </h4></div>
+  </a>    
+</div>
+</div>
+<div class="row">
+<div class="release" data-sr="enter bottom, move 50px ,over 0.5s, wait 0.30s">
+  <a href="  http://smarturl.it/Free_Dem">
+  <img src="https://cdn.shopify.com/s/files/1/2029/4271/t/9/assets/usd.jpg">
+  <div class="releasename"><h4>BLUE DAISY vs TOKiMONSTA | USD / Free Dem</h4></div>
+  </a>
+</div>
+<div class="release" data-sr="enter bottom, move 50px, over 0.5s, wait 0.50s">
+  <a href="http://smarturl.it/Midnight_Menu">
+  <img src="https://cdn.shopify.com/s/files/1/2029/4271/t/9/assets/midnight-menu.jpg">
+  <div class="releasename"><h4>Midnight Menu</h4></div>
+  </a>  
+</div>
+<div class="release" data-sr="enter bottom, move 50px, over 0.5s, wait 0.70s">
+  <a href="http://smarturl.it/Cosmic_Intoxication">
+  <img src="https://cdn.shopify.com/s/files/1/2029/4271/t/9/assets/cosmic.jpg">
+  <div class="releasename"><h4>Cosmic Intoxication</h4></div>
+  </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="bio" class="modal-window">
+ <div>
+  <a href="#" title="Close" class="modal-close">Close</a>
+ <h2 class="section-title">About</h2>
+ <div id="statement">
+ <p>
+ Over the last decade, the Los Angeles producer and Young Art label boss, TOKiMONSTA has helped define the sound of modern dance and beat music. In the process, she has received the co-signs of the biggest names in electronic and repped for the West Coast underground at the Grammys -- all without sacrificing the purity of her vision or relying on exploding glowstick bombast. The secret is that there is no secret, other than the compositional genius and futuristic melodies embedded into the gleaming, technicolor mandalas of hip-hop instrumentalism, pop, R&B-soul, house, and IDM that encompass the TOKiMONSTA sound.
+ </p>
+  
+ <p>
+ Her career has been so dynamic and versatile that it’s difficult to even know where to begin. We can focus on the current moment, where breathless anticipation abounds for her fourth full-length, Oasis Nocturno, a nocturnal opus that might be the best thing the producer born Jennifer Lee has ever done. Visualize a neon-lit, till-the-break-of-dawn journey filled with weightless grooves and propulsive funk, featuring assists from Bibi Bourelly, EARTHGANG, Channel Tres, Dumbfoundead, and more.  
+ </p>
+  
+ <p>
+Of course, there is 2017’s triumphant Lune Rouge, which received a Grammy nomination for “Best Electronic/Dance Album,” making her the first Asian-American producer to be up for the award, as well as the first woman. Not to mention that even being recognized at such a high level is a rarity for a completely independent artist without a major machine backing them. Pitchfork hailed TOKiMONSTA for taking her music to “new emotional heights.” While Billboard named it the 30th Best Dance Album of the last decade, one that is “impressive for its warm synthetic moods and hyphy rhythms, but downright mind-blowing when you hear its creator underwent two brain surgeries and temporarily lost her ability to understand music just before making it.” 
+ </p>
+  <p>
+The quote references TOKiMONSTA’S triumphant battle against Moyamoya (Japanese for a “puff of smoke”), a rare neurological condition in which certain arteries in the brain are constricted. It easily could have proven fatal or destroyed her career, but instead she summoned extraordinary strength, energy, and rhythm to make some of the most powerful and cathartic electronic music of the last ten years -- complete with epic comeback performances at SXSW and Coachella. 
+ </p> 
+  <p>
+Maybe it’s best to start at the beginning. After cutting her teeth in the famously competitive Beat Battles at the legendary Leimert Park hip-hop night Project Blowed, the barely out of college TOKi became a rising star, making necks snap as one of the only female producers in the Low End Theory scene. If you were there during the early days of that fabled L.A. beat music mecca, her performances are indelibly stamped in your hippocampus. A classically trained pianist, TOKi synthesized DJ Krush, DJ Shadow, J Dilla and RZA into a singularly innovative form, fluorescent and astral-minded, but girded by a heavy Richter-shaking hip-hop thump. 
+ </p>
+ <p>
+ It eventually led to her classic debut Midnight Menu, released on Flying Lotus’ Brainfeeder imprint at a time when the unanimously respected scene linchpin was tabbed as “the First Lady of Brainfeeder.” From there, the rest is dance music history. Her 2011 Brainfeeder EP, Creature Dreams, found her expanding beyond beatmaking to collaborate with dazzling vocalists, including the gifted Gavin Turek. Her 2013 LP and Ultra Music debut, Half Shadows, found her delving into noirish shades of sound and working with Kool Keith and MNDR.         
+ </p>
+  <p>
+In the wake of Half Shadows’ success, Lee collaborated with artists like Jessie Ware, Anderson .Paak, and Kelly Rowland, while simultaneously releasing records on her own Young Art imprint that served as the working blueprints for the glistening nocturnal soul of Lune Rouge. Mini-albums Desiderium from 2014 and 2016’s Fovere, elegantly deployed pitch-shifted vocal samples to add new textures to the TOKiMONSTA sound, and in 2015 she lent her deft touch to Turek’s, You’re Invited. 
+ </p>
+ <p>
+Then with her artistic livelihood and actual life in peril, TOKi defied the odds and created a masterpiece that cemented her stature as one of the best producers in dance music. For any other artist, it would’ve been a career pinnacle, but somehow, she’s topped that with her opus, Oasis Nocturno. The Spanish words for  “midnight oasis,” it’s a testament to TOKI’s ability to find refuge in the night, as a place of serenity after the chaos of the day or to let loose what’s hidden beneath the guise that darkness lends itself to. It’s an album that instantiates the liminal odyssey from dusk to dawn, from beginning to end, from the dance floor to self-reflection and rest.
+ </p>
+  <p>
+The hypnotic lead single  “Love That Never” features a dazzling animated video depicting a heroine running at night amidst the technicolor swirling sands of time. Its beat and ghostly chopped vocals conjure a feeling of dangerous unsettled beauty. This is soulful dance music to mirror the confusion of the world, another chapter from a continuously evolving artist who supplies intense heart in her music, movement in her live show and gorgeous imagery in all of the artwork and videos.
+ </p>
+ <p>
+Oasis Nocturno marks yet another left turn in a career that’s been replete with them. An album to offer both reprieve and revelry, one that aspires can help listeners grapple with complicated feelings and discover peace. This is yet another transportive work of adventure from a masterful producer who continues to find new portals to immerse the listener and offer them a beachhead to momentarily and seamlessly disappear. 
+ </p>
+</div> 
+</div>
+</section>
+<section id="contact" class="modal-window">
+ <div>
+  <a href="#" title="Close" class="modal-close">Close</a>
+ <h2 class="section-title">Contact</h2>
+ <div id="contacts">
+  <div class="contact-row">
+  <h5>Manager</h5>
+  <h4>Lewis Kunstler</h4>
+  <a href="mailto:lewis@2plus2.net" data-hover="Contact">Contact</a>
+  </div>
+  <div class="contact-row">
+  <h5>Site Design</h5>
+  <h4>Uncasual Studio</h4>
+  <a href="https://www.instagram.com/uncasually/" data-hover="Contact">Contact</a>
+  </div>
+ </div> 
+</div>
+</section>
+  </div>
+  <nav class="nav-menu link-effect" id="link-effect">
+  <a href="#music" data-hover="Music">Music</a>
+  <a href="#tour" data-hover="Tour">Tour</a>
+  <a href="https://tokimonsta.merchtable.com/?no_redirect=true" data-hover="Shop" target="_blank">Shop</a>
+  <a href="#releases" data-hover="Releases">Releases</a>
+  <!-- <a href="#videos">Videos</a> -->
+  <a href="#bio" data-hover="Bio">Bio</a>
+  <a href="#contact" data-hover="Contact">Contact</a>
+  </nav>
+  <footer>
+   <ul class="actions">
+   <li><a href="https://play.spotify.com/artist/3VwKSHAfgzV1DOHV0aANCI">
+       <i class="fab fa-spotify" aria-hidden="true"><span class="sr-only">Spotify</span></i></a></li>
+   <li><a href="https://soundcloud.com/tokimonsta">
+       <i class="fab fa-soundcloud" aria-hidden="true"><span class="sr-only">Soundcloud</span></i></a></li>
+   <li><a href="http://instagram.com/tokimonsta">
+       <i class="fab fa-instagram" aria-hidden="true"><span class="sr-only">Instagram</span></i></a></li>
+   <li><a href="https://www.facebook.com/tokimonsta">
+       <i class="fab fa-facebook-square" aria-hidden="true"><span class="sr-only">Facebook</span></i></a></li>
+   <li><a href="https://twitter.com/tokimonsta">
+       <i class="fab fa-twitter" aria-hidden="true"><span class="sr-only">Twitter</span></i></a></li>
+   <li><a href="https://www.youtube.com/user/tokimonsta">
+       <i class="fab fa-youtube" aria-hidden="true"><span class="sr-only">YouTube</span></i></a></li>
+   </ul>
+  </footer>
+ <script type="text/javascript" src="./js/vanilla-tilt.min.js"></script>
+ </body>
+</html>
