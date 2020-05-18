@@ -609,7 +609,11 @@ i {
   z-index: 100;
 }
 
-@media only screen and (max-width: 767px) { width: 48%; }
+@media only screen and (max-width: 767px) { 
+  .new-merch {
+    width: 48%; 
+  }
+}
 
 .new-merch p {
   margin: 2px 8px;
@@ -648,7 +652,11 @@ i {
   font-size: 13px;
   cursor: pointer;
 }
-@media only screen and (max-width: 767px) { cursor: auto; }
+@media only screen and (max-width: 767px) { 
+  .mimi_field .submit { 
+    cursor: auto;
+  }
+ }
 
 #signup_email, #signup_name {
   background: none;
