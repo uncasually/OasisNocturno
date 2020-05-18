@@ -607,7 +607,9 @@ i {
   flex-direction: column;
   width: 28%;
   z-index: 100;
-}   
+}
+
+@media only screen and (max-width: 767px) { width: 48%; }
 
 .new-merch p {
   margin: 2px 8px;
@@ -622,6 +624,7 @@ i {
   background: none;
   border: 0;
 }
+
 
 #ema_signup_form,
 .mimi_webform_container .mimi_webform form, 
@@ -645,6 +648,7 @@ i {
   font-size: 13px;
   cursor: pointer;
 }
+@media only screen and (max-width: 767px) { cursor: auto; }
 
 #signup_email, #signup_name {
   background: none;
