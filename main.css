@@ -655,6 +655,7 @@ i {
 @media only screen and (max-width: 767px) { 
   .mimi_field .submit { 
     cursor: auto;
+    width: 100%;
   }
  }
 
