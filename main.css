@@ -669,5 +669,11 @@ i {
   font-size: .9em;
 }
 
+input, submit {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 
 
