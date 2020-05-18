@@ -646,6 +646,7 @@ i {
   width: 50%;
   height: 35px;
   border: 2px solid #FFF;
+  border-radius: 0;
   color: #FFF;
   text-transform: uppercase;
   font-family: inherit;
