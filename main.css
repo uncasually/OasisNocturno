@@ -294,11 +294,18 @@ i {
 .bit-widget,
 .ytp-title-text {
  font-size: 14px!important;
+ font-family: inherit;
 }
 
 .bit-top-track-button {
  font-size: 9px!important;
  font-weight: 500!important;
+}
+
+.bit-widget.bit-layout-desktop .bit-event {
+  padding: 6px 6px !important;
+  display: flex;
+  flex-direction: row;
 }
 
 .bit-event-list-title {
@@ -311,6 +318,10 @@ i {
 
 .bit-button {
  line-height: 22px!important;
+}
+
+.bit-logo-container {
+  display: none!important;
 }
 
 /* SEATED */
