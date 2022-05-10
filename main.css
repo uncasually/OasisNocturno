@@ -601,6 +601,60 @@ i {
  #bio > div { top: 165%; } 
 }
 
+.newsletter {
+  position: fixed;
+  bottom: 10px;
+  left: calc(50% - 86px);
+  text-align: center;
+  z-index: 1;
+}
+
+.newsletter h4 {
+  margin: 0;
+  margin-bottom: 3px;
+}
+
+.newsletter-input {
+	font-size: 12px;
+	background: rgba(0,0,0,.5);
+	border: 1px solid #b294c5;
+	margin: 3px 0;
+	padding: 5px 10px;
+	min-width: 150px;
+}
+.newsletter label {
+  display: none;
+}
+
+.newsletter .submit {
+  background-color: #b294c5;
+	border: 1px solid #b294c5;
+	color: rgba(0,0,0,1);
+	font-family: "Work Sans";
+  font-size: 12px;
+	text-transform: uppercase;
+  margin: 10px 0;
+	padding: 6px 24px;
+  -ms-transition: all .25s ease-in-out .2s;
+ -moz-transition: all .25s ease-in-out .2s;
+ -webkit-transition: all .25s ease-in-out .2s;
+ transition: all .25s ease-in-out .2s;
+}
+.newsletter .submit:hover {
+  background-color: rgba(252, 223, 225, 1.00);
+  border: 1px solid rgba(252, 223, 225, 1.00);
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+@media only screen and (max-width: 749px) {
+  .newsletter {
+    left: calc(50% - 120px);
+    text-align: left;
+  }
+ }
+
 
 
 
