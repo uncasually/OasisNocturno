@@ -397,6 +397,10 @@ i {
   width: 25%;
 }
 
+.release img {
+  width: 100%;
+}
+
 .releases h2 {
   text-align: left;
 }
