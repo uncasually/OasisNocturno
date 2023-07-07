@@ -290,7 +290,10 @@ i {
 .media-players img {
  height: 100%;
 }
-
+.bit-widget-container {
+  overflow: scroll;
+  height: 80vh;
+}
 .bit-widget,
 .ytp-title-text {
  font-size: 14px!important;
