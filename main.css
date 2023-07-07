@@ -162,35 +162,6 @@ i {
   }
 }
 
-#info {
-  position: fixed;
-  top: 6vmin;
-  left: 50%;
-  height: 8vmin;
-  display: flex;
-  transform: translate(-50%, 0);
-  box-sizing: border-box;
-  text-align: center;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  z-index: 1; /* TODO Solve this in HTML */
-}
-
-#info img {
-  height: 100%;
-  display: block;
-}
-
-@media only screen and (max-width: 479px) {
-  #info {
-    top: 15vmin;
-    left: 60%;
-    width: 100%;
-  }
-}
-
 .nav-menu {
   position: fixed;
   right: 0;
