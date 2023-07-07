@@ -225,19 +225,9 @@ i {
   opacity: 0;
 }
 
-.music {
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  transform: translate(-50%, 0);
-  margin: 0;
-  z-index: 1;
-  text-align: center;
-}
-
-@media only screen and (max-width: 479px) {
-  .music {
-    margin: 0 5%;
+@media only screen and (min-width: 749px) {
+  #music > div {
+    width: auto;
   }
 }
 
@@ -459,10 +449,16 @@ i {
 #statement {
   font-size: 11px;
   line-height: 15px;
+  overflow: scroll;
+  height: 80vh;
 }
 
 #bio {
   margin-bottom: 10vmin;
+}
+
+#bio > div {
+  top: 55%;
 }
 
 #contacts h4,
@@ -588,13 +584,6 @@ i {
   transform: translate(-50%, -50%);
   padding: 1em;
   background: rgba(0, 0, 0, 0.75);
-}
-
-#music > div {
-  width: auto;
-}
-#bio > div {
-  top: 65%;
 }
 
 .modal-window header {
